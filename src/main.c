@@ -203,7 +203,6 @@ Transaction *makeTransaction(char *transaction, Miners *minerList, Users *userLi
 
     }
     return NULL;
-
 }
 
 /**

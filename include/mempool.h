@@ -8,9 +8,6 @@
 
 #define INITIAL_CAPACITY 10
 
-
-// typedef struct Transaction Transaction;
-
 /**
  * Mempool will store an array of transactions that have been validated
  */

@@ -3,6 +3,7 @@
  */
 #include "../include/user.h"
 #include "../include/mempool.h"
+#include "../include/blockchain.h"
 
 #define MAX_LENGTH 64
 
@@ -11,6 +12,7 @@
     int accountBalance;
     uint64_t publicKey;
     Mempool *mempool;
+    Blockchain *blockchain;
 
  };
 
@@ -108,6 +110,9 @@ uint64_t create_public_key(uint64_t sk){
     newUser->username = username;
     newUser->publicKey = pk;
     newUser->mempool = init_mempool();
+
+    //Initialize blockchain
+    newUser->blockchain = init_blockchain();
 
     return newUser;
  }

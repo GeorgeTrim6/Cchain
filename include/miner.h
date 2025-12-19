@@ -4,6 +4,7 @@
  */
 #include <stdlib.h>
 #include "user.h"
+#include "block.h"
 
  typedef struct Miner Miner;
 
@@ -20,3 +21,14 @@
  * Gets the user struct associated with the miner
  */
  User *get_miner_user(Miner *miner);
+
+
+ /**
+  * Miner creates a new block
+  */
+Block* create_block(int difficulty, uint64_t prevBlochHash);
+
+
+
+
+
